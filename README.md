@@ -1,5 +1,5 @@
 # Solar System NodeJS Application
-test1
+test1-2
 
 A simple HTML+MongoDB+NodeJS project to display Solar System and it's planets.
 
