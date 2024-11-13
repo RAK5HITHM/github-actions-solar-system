@@ -53,9 +53,11 @@
         path: coverage
         retention-days: 5   
     docker:
-     permissions: 
-      packages: write 
+     permissions:
+      packages: write
       contents: read
+      attestations: write
+      id-token: write
      runs-on: ubuntu-latest
      needs:
      - code-coverage
