@@ -55,7 +55,10 @@
     docker:
      runs-on: ubuntu-latest
      permissions: #added
+      contents: read
       packages: write
+      attestations: write
+      id-token: write
      needs:
      - code-coverage
      - unit-testing
