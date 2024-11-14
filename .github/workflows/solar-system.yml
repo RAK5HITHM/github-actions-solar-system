@@ -54,9 +54,6 @@
         retention-days: 5   
     docker:
      runs-on: ubuntu-latest
-     permissions:
-      contents: read
-      packages: write
      needs:
      - code-coverage
      - unit-testing
@@ -73,4 +70,4 @@
        with:
         context: .
         push: true
-        tags: 'ghcr.io/${{ env.REPO_OWNER_LC }}/solar-system:${{ github.sha }}'  
+        tags: 'ghcr.io/${{ env.REPO_OWNER_LC }}/solar-system:${{ github.sha }}' 
